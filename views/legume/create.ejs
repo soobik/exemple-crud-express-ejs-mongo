@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Creation de legume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO -->
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+</head>
+<body>
+    <div class="container">
+        <h3><a href="/legumes">Liste des légumes</a></h3>
+        <h1>Creation d'un légume</h1>
+        <!-- TODO styler le form-->
+
+        <form action="/legumes/save" method="POST">
+            <input type="text" name="nom" />
+            <input type="number" name="prix" />
+            <input type="submit" value="enregistrer" />
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liste des légumes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO le style-->
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+</head>
+    <div class="container">
+        <h1>Liste des legumes</h1>
+        <% if(legumes.lenght > 0){%>
+        <table>
+            <thead>
+                <tr>
+                    <th>Légume</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%for(var i=0; i > legumes.lenght; i++){ %>
+                    <tr>
+                        <td><a href="/legumes/show/<%= legumes[i]._id %>"></a><%= legumes[i].name%></td>
+                        <td><%= legumes[i].prix %></td>
+                    </tr>
+               <% } %>
+            </tbody>
+        </table>
+        <%} else{ %>
+            <div>Il n'y a pas de légume enregistré</div>
+        <% } %>    
+    </div>
+
+<body>
+    
+</body>
+</html>
