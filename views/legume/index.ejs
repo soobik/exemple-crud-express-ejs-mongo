@@ -10,19 +10,21 @@
 </head>
     <div class="container">
         <h1>Liste des legumes</h1>
-        <% if(legumes.lenght > 0){%>
+        <% if(legumes.length > 0){%>
         <table>
             <thead>
                 <tr>
                     <th>Légume</th>
                     <th>Prix</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                <%for(var i=0; i > legumes.lenght; i++){ %>
+                <% for (var i=0; i < legumes.length; i++){ %>
                     <tr>
-                        <td><a href="/legumes/show/<%= legumes[i]._id %>"></a><%= legumes[i].name%></td>
+                        <td><a href="/legumes/show/<%= legumes[i]._id %>"></a><%= legumes[i].nom%></td>
                         <td><%= legumes[i].prix %></td>
+                        <td><td><a href="/legumes/edit/<%= legumes[i]._id %>">Editer</a></td></td>
                     </tr>
                <% } %>
             </tbody>
