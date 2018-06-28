@@ -1,5 +1,5 @@
 # exemple-crud-express-ejs-mongo
-Un exemple de ***CRU***D en utilisant expressjs, EJS, mongoDB(mongoose)
+Un exemple de ***CRU*** D en utilisant expressjs, EJS, mongoDB(mongoose)
 
 J'ai utilisé le workflow suivant : 
 
