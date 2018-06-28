@@ -16,7 +16,7 @@ J'ai utilisé le workflow suivant :
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/product')
+mongoose.connect('mongodb://localhost/[nom_de_votre_base]')
   .then(() =>  console.log('connection succesful'))
 ```
 
